@@ -11,25 +11,7 @@ import org.bukkit.command.CommandSender;
 import com.gmail.filoghost.holographicdisplays.HolographicDisplays;
 import com.gmail.filoghost.holographicdisplays.commands.Colors;
 import com.gmail.filoghost.holographicdisplays.commands.Strings;
-import com.gmail.filoghost.holographicdisplays.commands.main.subs.AddlineCommand;
-import com.gmail.filoghost.holographicdisplays.commands.main.subs.AlignCommand;
-import com.gmail.filoghost.holographicdisplays.commands.main.subs.CopyCommand;
-import com.gmail.filoghost.holographicdisplays.commands.main.subs.CreateCommand;
-import com.gmail.filoghost.holographicdisplays.commands.main.subs.DeleteCommand;
-import com.gmail.filoghost.holographicdisplays.commands.main.subs.EditCommand;
-import com.gmail.filoghost.holographicdisplays.commands.main.subs.FixCommand;
-import com.gmail.filoghost.holographicdisplays.commands.main.subs.HelpCommand;
-import com.gmail.filoghost.holographicdisplays.commands.main.subs.InfoCommand;
-import com.gmail.filoghost.holographicdisplays.commands.main.subs.InsertlineCommand;
-import com.gmail.filoghost.holographicdisplays.commands.main.subs.ListCommand;
-import com.gmail.filoghost.holographicdisplays.commands.main.subs.MovehereCommand;
-import com.gmail.filoghost.holographicdisplays.commands.main.subs.NearCommand;
-import com.gmail.filoghost.holographicdisplays.commands.main.subs.ReadimageCommand;
-import com.gmail.filoghost.holographicdisplays.commands.main.subs.ReadtextCommand;
-import com.gmail.filoghost.holographicdisplays.commands.main.subs.ReloadCommand;
-import com.gmail.filoghost.holographicdisplays.commands.main.subs.RemovelineCommand;
-import com.gmail.filoghost.holographicdisplays.commands.main.subs.SetlineCommand;
-import com.gmail.filoghost.holographicdisplays.commands.main.subs.TeleportCommand;
+import com.gmail.filoghost.holographicdisplays.commands.main.subs.*;
 import com.gmail.filoghost.holographicdisplays.exception.CommandException;
 import com.gmail.filoghost.holographicdisplays.util.Utils;
 
@@ -52,6 +34,7 @@ public class HologramsCommandHandler implements CommandExecutor {
 		registerSubCommand(new CopyCommand());
 		registerSubCommand(new ReloadCommand());
 		registerSubCommand(new FixCommand());
+		registerSubCommand(new GlowTest());
 		
 		registerSubCommand(new RemovelineCommand());
 		registerSubCommand(new SetlineCommand());

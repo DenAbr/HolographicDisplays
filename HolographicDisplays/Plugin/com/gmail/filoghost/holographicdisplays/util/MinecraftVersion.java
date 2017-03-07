@@ -41,11 +41,11 @@ public class MinecraftVersion {
 	}
 	
 	public static MinecraftVersion get() {
-		return version;
+		return v1_11;
 	}
 	
 	public static boolean isGreaterEqualThan(MinecraftVersion other) {
-		return MinecraftVersion.version.value >= other.value;
+		return true;
 	}
 	
 }
